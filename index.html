@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <script src="tailwind.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <style>
+        .container{
+            width:100%;
+            max-width: 1140px;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-2xl md:text-5xl text-center text-teal-400 p-5">Money Master <i class="fa-solid fa-sack-dollar text-amber-400"></i></h1>
+        <section class="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5">
+    <div>
+        <img src="images/money.jpg"style="height:650px;" alt="money">
+    </div>
+    <div class="bg-slate-50 flex justify-center pt-10 ">
+        <div>
+            <!--Income-->
+    <p class="text-center font-bold">Income</p>
+    <p class="mt-2">Income: <input id="income"type="number"class="bg-slate-200"></p>
+            <!--expenses-->
+
+    <p class="text-center font-bold mt-8">Expenses</p>
+    <p class="mt-2">Food: <input id="food"type="number"class="bg-slate-200 ml-5"></p>
+    <p class="mt-2">Rent: <input id="rent"type="number"class="bg-slate-200 ml-6"></p>
+    <p class="mt-2">Clothes: <input id="cloth"type="number"class="bg-slate-200 ml-1"></p>
+            <!--calculate-btn-->
+          <p class="text-center">  <button id="total_calculate"type="button" class="mt-5 mx-auto text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Calculate</button></p>
+          <p class="font-bold text-center">Total Expenses: <span id="total_expenses">5500</span></p>
+          <p class="font-bold text-center mt-5"> Balance: <span id="balance">0000</span></p>
+<p>save <input id="saving"type="number"class="bg-slate-200 mx-2">%
+     <button id="save"type="button" class="mt-5 mx-auto text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">save</button></p>
+
+<p class="font-bold text-center">Savings Amount: <span id="savings_amount">5500</span></p>
+          <p class="font-bold text-center mt-2">Remaining Balance: <span id="remaining_balance">5000</span></p>
+</div>
+    </div>
+        </section>
+    </div>
+    <script src="utility.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+</html>
