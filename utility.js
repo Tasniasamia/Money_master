@@ -26,13 +26,7 @@ const arrs=document.getElementById(inner_id);
 const arrs_value=arrs.innerText;
 const arrs_value_number=parseInt(arrs_value);
 
-if (isNaN(arrs_value_number)||(arrs_value_number<0)){
-    alert("please enter valid");
-    
-  }
-  else{
-    return arrs_value_number;
-  }
+return arrs_value_number;
 
 
 
@@ -49,16 +43,13 @@ function total(){
     }
     else{
         const total_value=getIdvalue('food')+getIdvalue('rent')+getIdvalue('cloth');
-        if(total_value<0){
-            alert("what the wrong");
-        }
-        else{
+       
             return total_value;
 
         }
     }
     
-}
+
 function empty(emptyid){
     document.getElementById(emptyid).innerText="";
 }
@@ -66,32 +57,4 @@ function empty(emptyid){
 
 
 
-// document.getElementById('total_calculate').addEventListener('click',function(){
-//     getIdinnerTextset_value("total_expenses",total());
-//     const income=getIdvalue('income');
-//     const total_cost=total();
-//     const balance=income-total_cost;
-//     if((isNaN(balance))||(balance<0)){
-//         alert('please enter valid');
-    
-//     }
-//     else{
-//         getIdinnerTextset_value("balance",balance);
 
-//     }
-
-// })
-// document.getElementById('save').addEventListener('click',function(){
-//    const total_buy=getIdinnertext('balance');
-//    const saving_percent=getIdvalue('saving');
-//    const total_save=Math.round(total_buy*(saving_percent/100));
-//    if(total_save<0){
-//     empty("savings_amount");
-//     empty("remaining_balance");
-//    }
-//    getIdinnerTextset_value("savings_amount",total_save);
-
-//    const remaining=total_buy-total_save;
-//    getIdinnerTextset_value("remaining_balance",remaining);
-
-// })
